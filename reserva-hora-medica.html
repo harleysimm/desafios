@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve su hora</title>
+</head>
+
+<body style="font-family: calibri;">
+    <form action="redireccion.html" method="post">
+        <h1 style="margin-left: 35%;"><b>FORMULARIO</b></h1>
+        <br>
+        <div style="margin-left: 35%;">
+            <b>
+                <label for="nombre">NOMBRE</label>
+                <br>
+                <input type="text" name="nombre" id="nombre" required>
+                <br><br>
+                <label for="direccion">DIRECCIÓN</label>
+                <br>
+                <input type="text" name="direccion" id="direccion" required>
+                <br><br>
+                <label for="lista">ESPECIALIDAD MEDICA</label>
+                <br>
+                <input type="text" name="lista" list="especialidad" required>
+                <datalist id="especialidad">
+                    <option value="MEDICINA INTERNA">
+                    <option value="MEDICINA GENERAL">
+                    <option value="TRAUMATOLOGIA">
+                    <option value="NUTRICIONISTA">
+                </datalist>
+                <br><br>
+                <label for="">FECHA</label>
+                <br>
+                <input type="date" required>
+                <br><br>
+                <label for="">HORA</label>
+                <br>
+                <input type="time" required>
+                <br><br>
+                <label for="correo">CORREO</label>
+                <br>
+                <input type="email" name="correo" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required>
+                <br><br>
+                <button>CONFIRMAR</button>
+            </b>
+        </div>
+    </form>
+</body>
+
+</html>
